@@ -1,7 +1,7 @@
 version: '2'
 services:
   postfix:
-    image: juanluisbaptiste/postfix:latest
+    image: wailram/postfix:latest
     environment:
       SMTP_SERVER: ${IP}
       SERVER_HOSTNAME: ${DOMAIN_NAME}
