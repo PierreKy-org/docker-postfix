@@ -125,4 +125,6 @@ fi
 # starting services
 rm -f /var/spool/postfix/pid/master.pid
 
+adduser -D ${USERNAME_ACCOUNT}  && echo "${USERNAME_ACCOUNT}:${PASSWORD_ACCOUNT}" | chpasswd
+
 exec /usr/sbin/postfix -c /etc/postfix start-fg

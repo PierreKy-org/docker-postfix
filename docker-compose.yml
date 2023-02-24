@@ -6,6 +6,8 @@ services:
       SMTP_SERVER: ${IP}
       SERVER_HOSTNAME: ${DOMAIN_NAME}
       DESTINATION: ${DESTINATION}
+      USERNAME_ACCOUNT: ${USERNAME_ACCOUNT}
+      PASSWORD_ACCOUNT: ${PASSWORD_ACCOUNT}
     expose:
     - "25"
     - "587"
